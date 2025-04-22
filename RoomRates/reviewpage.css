@@ -1,0 +1,146 @@
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #bc1a1a;
+  color: white;
+  font-size: 30px;
+}
+
+.searchbar {
+    padding: 14px;
+    border-radius: 28px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: box-shadow 0.15s;
+}
+.searchbar:focus-within{
+  box-shadow: 0 0 0px rgba(4, 4, 4, 0.75);
+}
+
+
+.searchbar input {
+  width: 390px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  padding: 0 15px;
+  
+  background: white;
+  color: #333333;
+  font-size: 18px;
+}
+
+.name h1{
+  font-weight: normal;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.reviewbox1 {
+    border: 2px solid black;  /* Border around the box */
+    padding: 10px;            /* Space between the border and text */ 
+    margin: 20px;             /* Space outside the box */
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviewbox2 {
+    border: 2px solid black;  /* Border around the box */
+    padding: 10px;            /* Space between the border and text */ 
+    margin: 20px;             /* Space outside the box */
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviewbox3 {
+    border: 2px solid black;  /* Border around the box */
+    padding: 10px;            /* Space between the border and text */ 
+    margin: 20px;             /* Space outside the box */
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .date {
+    displaY: flex;
+    text-align: left;
+  }
+
+  .rating {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .review {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .create-review {  /* button to make a review */
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    padding: 10px 20px;
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    
+
+    transition: background-color 0.2s ease;
+}
+
+.create-review:hover {
+    color: rgb(174, 26, 26); 
+}
+
+.homepage {
+    position: absolute;
+    top: 20px;
+    right: 260px;
+    padding: 10px 20px;
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    
+
+    transition: background-color 0.2s ease;
+}
+
+.homepage:hover {
+    color: rgb(174, 26, 26); 
+}
+
+.login {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  padding: 10px 20px;
+  
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  
+
+  transition: background-color 0.2s ease;
+}
+
+.login:hover {
+  color: rgb(174, 26, 26); 
+}
+

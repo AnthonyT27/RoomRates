@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomRates</title>
+    <link rel="icon" type="image/png" href="images/Roomy.png">
+    <!--CSS page-->
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"/>
+</head>
+<body background="images/Back.jpg">
+    
+    <a href="mainpage.html" class="logo">
+        <img src="images/small Roomy.png" alt="Web Icon" height="100">
+    </a>
+    <a href="reviewpage.html" class="create-review" style="font-family: 'Times New Roman'"><b>Rate a Roommate</b></a>
+    <a href="mainpage.html" class="homepage" style="font-family: 'Times New Roman'"><b>Home</b></a>
+    <a href="loginpage.html" class="login" style="font-family: 'Times New Roman'"> <b>Login/Signup<b></a>
+    
+    <div class="header">
+        <h1> Search for a <br> Roommate </h1>
+    </div>
+    
+    <form id="search-form">
+        <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            
+            <input class="search-input" id="search-input" type="search" placeholder="Search Name">
+        </div>
+    </form> 
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            let searchQuery = document.getElementById("search-input").value.trim();
+    
+            if (searchQuery) {
+                // Redirect to results.html with search query as a URL parameter
+                window.location.href = `reviewpage.html?query=${encodeURIComponent(searchQuery)}`;
+            } else {
+                // If empty, just go to results.html
+                window.location.href = "results.html";
+            }
+        });
+    </script>
+
+</body>
+</html>
