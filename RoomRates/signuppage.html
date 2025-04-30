@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="icon" type="image/png" href="images/Roomy.png">    
+    <style>
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .create-review {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.2s ease;
+        }
+
+        .create-review:hover {
+           color: rgb(174, 26, 26); 
+        }
+
+        .homepage {
+           position: absolute;
+          top: 20px;
+            right: 170px;
+           padding: 10px 20px;
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+         font-size: 16px;
+          transition: background-color 0.2s ease;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url('images/login.jpg'); /* New background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+        .signup-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .signup-container h2 {
+            margin-bottom: 20px;
+        }
+        .signup-container input {
+            width: 93%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(214, 18, 35);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .signup-container button:hover {
+            background-color: #000000;
+        }
+        .login-link {
+            display: block;
+            margin-top: 10px;
+            color: rgb(214, 18, 35);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .login-link:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <a href="mainpage.html" class="logo">
+        <img src="images/small Roomy.png" alt="Web Icon" height="100">
+    </a>
+    <a href="reviewpage.html" class="create-review" style="font-family: 'Times New Roman'"><b>Rate a Roommate</b></a>
+    <a href="mainpage.html" class="homepage" style="font-family: 'Times New Roman'"><b>Home</b></a>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <a href="loginpage.html" class="login-link">Already have an account? Login</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    }
+
+body {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+.background{
+    background-image:url('main_back.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+}
+
+.header {
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    color: rgb(206, 32, 32);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    margin-left: 80px;
+}
+
+.g-recaptcha{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px
+
+}
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    margin-top: 1px;
+    background: #f6f6f6;
+    transition: box-shadow 0.15s;
+   
+}
+.search:focus-within{
+    box-shadow: 0 0 2px rgba(4, 4, 4, 0.75);
+}
+
+.search-input{
+    
+    font-size: 25px;
+    font-family:'Times New Roman';
+    color:#333333;
+    margin-left:14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 500px;
+    
+}
+
+.search-input::placeholder,.search-icon
+{
+    color: rgba(0, 0, 0, 0.35)
+}
+.create-review {  /* button to make a review */
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    padding: 10px 20px;
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    
+
+    transition: background-color 0.2s ease;
+}
+
+.create-review:hover {
+    color: rgb(174, 26, 26); 
+}
+
+.homepage {
+    position: absolute;
+    top: 20px;
+    right: 260px;
+    padding: 10px 20px;
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    
+
+    transition: background-color 0.2s ease;
+}
+
+.homepage:hover {
+    color: rgb(174, 26, 26); 
+}
+
+.login {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  padding: 10px 20px;
+  
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  
+
+  transition: background-color 0.2s ease;
+}
+
+.login:hover {
+  color: rgb(174, 26, 26); 
+}
+
